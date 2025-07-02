@@ -1,8 +1,11 @@
 
 
--- task_4.sql
--- Prints full description of the books table without using DESCRIBE or EXPLAIN
+
 USE alx_book_store;
+-- task_4.sql
+-- Prints full description of the books table from alx_book_store
+-- Does not use DESCRIBE or EXPLAIN
+
 SELECT 
     COLUMN_NAME,
     COLUMN_TYPE,
