@@ -3,8 +3,8 @@
 
 USE alx_book_store;
 -- task_4.sql
--- Prints full description of the books table from alx_book_store
--- Does not use DESCRIBE or EXPLAIN
+-- Prints the full description of the 'books' table
+-- WITHOUT using DESCRIBE or EXPLAIN
 
 SELECT 
     COLUMN_NAME,
@@ -16,5 +16,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = 'alx_book_store'
+    TABLE_SCHEMA = DATABASE()
     AND TABLE_NAME = 'books';
