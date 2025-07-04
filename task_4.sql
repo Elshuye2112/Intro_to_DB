@@ -2,9 +2,6 @@
 
 
 USE alx_book_store;
--- task_4.sql
--- Prints the full description of the 'books' table
--- WITHOUT using DESCRIBE or EXPLAIN
 
 SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_DEFAULT, COLUMN_KEY, EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS
